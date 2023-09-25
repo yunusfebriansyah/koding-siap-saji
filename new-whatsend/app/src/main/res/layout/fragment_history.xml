@@ -18,19 +18,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingVertical="20dp">
+            android:paddingTop="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Histories"
                 android:textStyle="bold"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginBottom="5dp"/>
-
-            <TextView
-                android:id="@+id/txt_blank"
-                style="@style/blank_text"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_data"
@@ -39,5 +35,13 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_blank"
+        style="@style/blank_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

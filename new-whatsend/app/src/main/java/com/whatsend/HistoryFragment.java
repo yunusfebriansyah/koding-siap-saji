@@ -67,6 +67,7 @@ public class HistoryFragment extends Fragment {
 
         rcvData.setLayoutManager(linearLayoutManagerData);
         rcvData.setHasFixedSize(true);
+        rcvData.setNestedScrollingEnabled(false);
         rcvData.setAdapter(adapterData);
 
         cursor = db.rawQuery("SELECT * FROM tbl_history ORDER BY id DESC",null);
